@@ -787,7 +787,7 @@ sealed class UInt private[chisel3] (width: Width) extends Bits(width) with Num[U
     *
     * @param off a dynamic offset
     * @param dat set if true, clear if false
-    * @return a hrdware $coll with bit `off` set or cleared based on the value of `dat`
+    * @return a hardware $coll with bit `off` set or cleared based on the value of `dat`
     * $unchangedWidth
     */
   final def bitSet(off: UInt, dat: Bool): UInt = macro UIntTransform.bitset
